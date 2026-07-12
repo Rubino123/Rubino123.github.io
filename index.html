@@ -329,6 +329,21 @@
       #inside {
         margin-top: 40px;
       }
+/* SUNRAY BACKGROUND OVERLAY */
+.sunrays {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -2; /* behind bubbles */
+  background: 
+    linear-gradient(120deg, rgba(255,255,255,0.25) 0%, transparent 60%),
+    linear-gradient(60deg, rgba(255,255,255,0.20) 0%, transparent 70%),
+    linear-gradient(180deg, rgba(255,220,150,0.25) 0%, transparent 80%);
+  mix-blend-mode: screen;
+}   
  /* Step 1 on BUBBLE ANIMATION */
       body {
   background-color: #a8e8f0;
