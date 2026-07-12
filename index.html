@@ -286,7 +286,20 @@
       font-size: 0.85rem;
       color: var(--text-muted);
     }
+  header {
+    flex-direction: column;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+  }
 
+  header nav {
+    margin-top: 12px;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+  }
+  
     @media (max-width: 800px) {
       .hero {
         grid-template-columns: 1fr;
@@ -307,7 +320,7 @@
   <!-- HEADER -->
   <header>
   <div class="top-title">
-    Dr. Ray at Play &nbsp; / &nbsp; Author: DrRayatPlay
+    Dr. Ray at Play &nbsp; / &nbsp; Author Name: DrRayatPlay
   </div>
   
   <nav>
