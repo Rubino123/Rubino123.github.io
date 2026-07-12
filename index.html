@@ -290,10 +290,11 @@
 <body>
 
   <!-- HEADER -->
-  <header style="padding: 24px 40px; background: rgba(255,255,255,0.9); backdrop-filter: blur(8px); position: sticky; top: 0; z-index: 10;">
-  
-  <div style="text-align:center; width:100%; margin-bottom:10px;">
-    <div style="font-size:2.4rem; font-weight:700; color:#005f99; letter-spacing:0.03em;">
+  <header style="background: rgba(255,255,255,0.9); backdrop-filter: blur(8px); position: sticky; top: 0; z-index: 10; padding: 20px 40px;">
+
+  <!-- TOP TITLE -->
+  <div style="text-align:center; margin-bottom:15px;">
+    <div style="font-size:2.6rem; font-weight:700; color:#005f99;">
       Dr. Ray at Play
     </div>
     <div style="font-size:1.2rem; color:#00384d; margin-top:4px;">
@@ -301,17 +302,22 @@
     </div>
   </div>
 
-  <nav style="text-align:center; margin-top:12px;">
-    <a href="#about" style="margin:0 12px; text-decoration:none; color:#00263d;">About</a>
-    <a href="#inside" style="margin:0 12px; text-decoration:none; color:#00263d;">Inside</a>
-    <a href="#reviews" style="margin:0 12px; text-decoration:none; color:#00263d;">Reviews</a>
-    <a href="#author" style="margin:0 12px; text-decoration:none; color:#00263d;">Author</a>
-    <a href="#buy" style="margin:0 12px; text-decoration:none; color:#00263d;">Buy</a>
+  <!-- NAV BAR (keeps buttons on one line) -->
+  <nav style="
+    display:flex;
+    justify-content:center;
+    gap:24px;
+    flex-wrap:nowrap;
+  ">
+    <a href="#about" style="text-decoration:none; color:#00263d; font-size:1rem;">About</a>
+    <a href="#inside" style="text-decoration:none; color:#00263d; font-size:1rem;">Inside</a>
+    <a href="#reviews" style="text-decoration:none; color:#00263d; font-size:1rem;">Reviews</a>
+    <a href="#author" style="text-decoration:none; color:#00263d; font-size:1rem;">Author</a>
+    <a href="#buy" style="text-decoration:none; color:#00263d; font-size:1rem;">Buy</a>
   </nav>
 
   </header>
   
-
   <!-- HERO -->
 <section class="hero">
   <div class="hero-text">
