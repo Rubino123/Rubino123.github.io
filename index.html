@@ -291,15 +291,31 @@
 
   <!-- HEADER -->
   <header>
-    <div class="logo">OSKER THE OYSTER</div>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#inside">Inside</a>
-      <a href="#reviews">Reviews</a>
-      <a href="#author">Author</a>
-      <a href="#buy">Buy</a>
-    </nav>
+  <div class="top-title">
+    Dr. Ray at Play<br>
+    <span style="font-size:0.9rem; font-weight:400;">Author: DrRayatPlay</span>
+  </div>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#inside">Inside</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#author">Author</a>
+    <a href="#buy">Buy</a>
+  </nav>
   </header>
+
+  header {
+  flex-direction: column;
+  text-align: center;
+  }
+
+  header nav {
+  margin-top: 12px;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  }
 
   <!-- HERO -->
 <section class="hero">
