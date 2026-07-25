@@ -431,37 +431,7 @@
   font-size: 0.85rem;
   color: var(--text-muted);
   margin-bottom: 12px;
-}  
-
-/* Floating Chat Icon */
-#chat-bubble {
-  position: fixed;
-  bottom: 24px;
-  right: 24px;
-  width: 90px;
-  height: 90px;
-  background: rgba(255,255,255,0.85);
-  border-radius: 50%;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  z-index: 99999;
-  backdrop-filter: blur(6px);
-  transition: transform 0.2s ease;
-}
-
-#chat-bubble img {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-}
-
-#chat-bubble:hover {
-  transform: scale(1.08);
-}
-        
+}        
  }
  </style>
 </head>
@@ -666,18 +636,47 @@
   </div>
   </footer>
 
-  
- <!-- FLOATING CHAT ICON -->
+<!-- FLOATING CHAT ICON -->
 <div id="chat-bubble">
   <img src="DrRayLogo.png" alt="Chat with Dr. Ray at Play" />
 </div>
- 
+
+<style>
+  /* Floating Chat Icon */
+  #chat-bubble {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 90px;
+    height: 90px;
+    background: rgba(255,255,255,0.85);
+    border-radius: 50%;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 99999;
+    backdrop-filter: blur(6px);
+    transition: transform 0.2s ease;
+  }
+
+  #chat-bubble img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+
+  #chat-bubble:hover {
+    transform: scale(1.08);
+  }
+</style>
+
 <script>
   document.getElementById("chat-bubble").onclick = function() {
     window.open("https://YOUR-STREAMLIT-APP.streamlit.app", "_blank");
   };
 </script>
-
   
 </body>
 </html>
