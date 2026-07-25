@@ -431,9 +431,39 @@
   font-size: 0.85rem;
   color: var(--text-muted);
   margin-bottom: 12px;
-}      
-  }
-  </style>
+}  
+
+/* Floating Chat Icon */
+#chat-bubble {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 70px;
+  height: 70px;
+  background: rgba(255,255,255,0.85);
+  border-radius: 50%;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 9999;
+  backdrop-filter: blur(6px);
+  transition: transform 0.2s ease;
+}
+
+#chat-bubble img {
+  width: 60px;     /* ← slightly smaller, looks perfect */
+  height: 60px;
+  border-radius: 50%;
+}
+
+#chat-bubble:hover {
+  transform: scale(1.08);
+}
+          
+ }
+ </style>
 </head>
 <body>
 
@@ -635,7 +665,17 @@
     Designed and Developed by Sharon Rubino, B.S., MCS
   </div>
   </footer>
-  
 
+  <!-- FLOATING CHAT ICON -->
+<div id="chat-bubble">
+  <img src="DrRayLogo.png" alt="Chat with Dr. Ray at Play" />
+</div>
+
+<script>
+  document.getElementById("chat-bubble").onclick = function() {
+    window.open("https://YOUR-STREAMLIT-APP.streamlit.app", "_blank");
+  };
+</script>
+  
 </body>
 </html>
